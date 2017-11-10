@@ -1,0 +1,246 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@* the fun starts here *@
+<!--Header-->
+<header>
+    <div class="container">
+        <div class="intro-text">
+            <a href="#planning" class="page-scroll btn btn-xl" id="btn-header">Inschrijven</a>
+        </div>
+    </div>
+</header>
+
+<!--end Header-->
+<!-- Planning Section -->
+<section id="planning">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Planning 2018</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tickets Section -->
+<section id="tickets" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Tickets</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="team-member">
+                    <img href="#" src="~/img/team/1.jpg" class="img-responsive img-circle" alt="">
+                    <p class="text-muted">VEURGLOEIEN 2018</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Media section -->
+<section id="media">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Media</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3 class="text-muted">Aftermovie 2017</h3>
+                <div class="fb-video" data-href="https://www.facebook.com/cvdnduikboot/videos/370258723387775/" data-show-text="false">
+                    <blockquote cite="https://www.facebook.com/cvdnduikboot/videos/370258723387775/" class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/cvdnduikboot/videos/370258723387775/">CV D&#039;n Duikboot | Aftermovie Carnaval 2017!</a><p>
+                            Daar is hij dan eindelijk! De enige echte aftermovie van carnaval 2017 met CV D&#039;n Duikboot!
+
+                            Veel kijkplezier en tot carnaval 2018!
+                        </p>Geplaatst door <a href="https://www.facebook.com/cvdnduikboot/">CV D&#039;n Duikboot</a> op vrijdag 27 oktober 2017
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3 class="text-muted">Foto's</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container"> 
+        @{
+            string[] images = Directory.GetFiles(Server.MapPath(@"~/img/fotos"), "*.jpg")
+                .Select(Path.GetFileName)
+                .ToArray(); 
+
+            foreach (string file in images)
+            { 
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                    <img src="~/img/fotos/@file" class="img-responsive">
+                </div>
+            }
+        }
+    </div>
+</section>
+
+<!-- Timeline Section -->
+<section id="timeline" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Timeline</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="~/img/about/1.png" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>FUSIE | 2016</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">De vriendengroepen VG Simpel en VG Boem uit Biezenmortel bundelen sinds 2016 hun krachten en vormen samen 'CV D'n Duikboot'. Nieuwe trailer, meer geluid, meer gezelligheid!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="~/img/about/2.png" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>CARNAVAL | 2017</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Het eerste jaar voor CV D'n Duikboot! We hebben vier dagen lang geknalt en samen met de Kleuven hebben we op maandagavond de Vorselaer op zijn kop gezet tijdens 'Roeien of Verzuipen'!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="~/img/about/3.png" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>DUIKBOOTSPELEN | 2017</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">In de zomer heeft CV D'n Duikboot voor het eerst de 'Olympische Duikbootspelen' georganiseerd. Een zonnige dag gevuld met een buikschuifbaan, een zwembad, muziek, een camping en de nodige drankjes! Het was een geslaagde dag!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="~/img/about/4.png" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>FOUTE CARNAVALSPARTY | 2017</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Samen met 't Plein in Udenhout steken we deze avond in een nieuw jasje! Artiesten als Veul Gère, Tim Schalx en Zanger Rinus zorgde voor entertainment.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="~/img/about/5.png" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>CARNAVAL | 2018</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Carnaval 2018 staat in het teken van Walt Disney! Ook deze carnaval gaan we er weer vier magisch gezellige dagen van maken! Schrijf je snel in, want vol = vol!</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Sponsoren Aside -->
+<aside class="clients">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Hoofdsponsoren</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <a href="http://www.verhuur-licht-geluid.nl/">
+                    <img src="~/img/logos/Woox.png" class="img-responsive img-centered" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a href="https://www.boomrooierijweijtmans.nl/home/">
+                    <img src="~/img/logos/Weijtmans.png" class="img-responsive img-centered" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a href="https://www.bamvermeer.nl/">
+                    <img src="~/img/logos/BAM-Vermeer.jpg" class="img-responsive img-centered" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a href="https://tifavandepas.nl/">
+                    <img src="~/img/logos/Van_de_Pas.png" style="margin-top: 20px;" class="img-responsive img-centered" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</aside>
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Contact</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form name="sentMessage form-signup" id="contactForm" novalidate>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="NAAM *" id="name" required data-validation-required-message="Vul je naam in.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="MAIL *" id="email" required data-validation-required-message="Vul je emailadres in.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" placeholder="TELEFOONNUMMER *" id="phone" required data-validation-required-message="Vul je telefoonnummer in.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="JOUW BERICHT *" id="message" required data-validation-required-message="Voer een bericht in."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 text-center">
+                            <div id="success"></div>
+                            <button type="submit" class="btn btn-xl">Verzenden</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
