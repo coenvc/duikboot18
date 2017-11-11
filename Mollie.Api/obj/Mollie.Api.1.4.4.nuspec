@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Mollie.Api</id>
+    <version>1.4.4</version>
+    <authors>Vincent Kok</authors>
+    <owners>Vincent Kok</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/Viincenttt/MollieApi</projectUrl>
+    <description>This is a wrapper for the Mollie REST webservice. All payment methods and webservice calls are supported.</description>
+    <tags>Mollie</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard1.2">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="10.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\coenv\documents\visual studio 2017\Projects\Duikboot2018\Mollie.Api\bin\Release\netstandard1.2\Mollie.Api.dll" target="lib\netstandard1.2\Mollie.Api.dll" />
+  </files>
+</package>

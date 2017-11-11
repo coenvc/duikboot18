@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DuikbootDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Meerijder">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Firstname" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Surname" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Message" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Zaterdag" Type="Boolean" />
+    <Property Name="Zondag" Type="Boolean" />
+    <Property Name="Maandag" Type="Boolean" />
+    <Property Name="Dinsdag" Type="Boolean" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityContainer Name="DuikbootDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Meerijder" EntityType="Self.Meerijder" />
+  </EntityContainer>
+</Schema>

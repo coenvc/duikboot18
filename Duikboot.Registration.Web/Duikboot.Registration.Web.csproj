@@ -45,6 +45,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Duikboot.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Bin\Duikboot.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -55,6 +65,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -146,7 +157,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\MeerijderDay.cs" />
+    <Compile Include="Models\CustomerRequestModel.cs" />
+    <Compile Include="Models\PaymentRequestModel.cs" />
+    <Compile Include="Models\SubscriptionListViewModel.cs" />
+    <Compile Include="Models\SubscriptionRequestModel.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
@@ -168,6 +182,11 @@
     <Content Include="img\about\2.png" />
     <Content Include="img\about\3.png" />
     <Content Include="img\about\4.png" />
+    <Content Include="img\content\Geslaagd.png" />
+    <Content Include="img\content\Mislukt.png" />
+    <Content Include="img\content\MOCP.jpg" />
+    <Content Include="img\content\Veurgloeien.jpg" />
+    <Content Include="img\content\Voorlopige_planning.png" />
     <Content Include="img\fotos\1.jpg" />
     <Content Include="img\fotos\10.JPG" />
     <Content Include="img\fotos\11.JPG" />
@@ -210,7 +229,11 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="img\AexBanner-master.zip" />
+    <Content Include="Content\documents\Huisregels_Carnaval_2018.pdf" />
+    <Content Include="fonts\DK_Lemon_Yellow_Sun.otf" />
+    <Content Include="fonts\Homizio_Regular.ttf" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\CustomProfile1.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -290,6 +313,8 @@
     <Content Include="vendor\font-awesome\scss\_screen-reader.scss" />
     <Content Include="vendor\font-awesome\scss\_stacked.scss" />
     <Content Include="vendor\font-awesome\scss\_variables.scss" />
+    <Content Include="Views\Registration\Complete.cshtml" />
+    <Content Include="Views\Registration\Failed.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -304,19 +329,21 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Desktop\MollieApi-master\MollieApi-master\Mollie.Api\Mollie.Api.csproj">
-      <Project>{52635953-d779-4b8c-b4dc-7f254039baa4}</Project>
-      <Name>Mollie.Api</Name>
+    <ProjectReference Include="..\Duikboot.Data.Live\Duikboot.Data.Live.csproj">
+      <Project>{e1a152a7-9f61-4c20-8288-7b498b28576e}</Project>
+      <Name>Duikboot.Data.Live</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Duikboot.Data\Duikboot.Data.csproj">
-      <Project>{0500a74f-2e06-4f62-a3bd-8a3abf31787c}</Project>
-      <Name>Duikboot.Data</Name>
+    <ProjectReference Include="..\Mollie.Api\Mollie.Api.csproj">
+      <Project>{938a3c2d-15da-45f3-92a4-08aa9edbc126}</Project>
+      <Name>Mollie.Api</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

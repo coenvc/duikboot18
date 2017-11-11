@@ -4,13 +4,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using Duikboot.Registration.Web.Models;
 using Mollie.Api.Client;
 using Mollie.Api.Client.Abstract;
 using Mollie.Api.Models.List;
 using Mollie.Api.Models.Payment.Request;
 using Mollie.Api.Models.Payment.Response;
 using Mollie.WebApplicationExample.Models;
-using Mollie.Api.Models.Payment.Response; 
+using Mollie.Api.Models.Payment.Response;  
+using System.Threading.Tasks;
 namespace Duikboot.Registration.Web.Controllers
 {
     public class HomeController : Controller

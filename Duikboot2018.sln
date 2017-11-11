@@ -5,9 +5,9 @@ VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duikboot.Registration.Web", "Duikboot.Registration.Web\Duikboot.Registration.Web.csproj", "{F33B7A24-F5EA-4159-8D59-0A4B77D60FFB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mollie.Api", "..\..\..\..\Desktop\MollieApi-master\MollieApi-master\Mollie.Api\Mollie.Api.csproj", "{52635953-D779-4B8C-B4DC-7F254039BAA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mollie.Api", "Mollie.Api\Mollie.Api.csproj", "{938A3C2D-15DA-45F3-92A4-08AA9EDBC126}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duikboot.Data", "Duikboot.Data\Duikboot.Data.csproj", "{0500A74F-2E06-4F62-A3BD-8A3ABF31787C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duikboot.Data.Live", "Duikboot.Data.Live\Duikboot.Data.Live.csproj", "{E1A152A7-9F61-4C20-8288-7B498B28576E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{F33B7A24-F5EA-4159-8D59-0A4B77D60FFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F33B7A24-F5EA-4159-8D59-0A4B77D60FFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F33B7A24-F5EA-4159-8D59-0A4B77D60FFB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{52635953-D779-4B8C-B4DC-7F254039BAA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{52635953-D779-4B8C-B4DC-7F254039BAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{52635953-D779-4B8C-B4DC-7F254039BAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{52635953-D779-4B8C-B4DC-7F254039BAA4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0500A74F-2E06-4F62-A3BD-8A3ABF31787C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0500A74F-2E06-4F62-A3BD-8A3ABF31787C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0500A74F-2E06-4F62-A3BD-8A3ABF31787C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0500A74F-2E06-4F62-A3BD-8A3ABF31787C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{938A3C2D-15DA-45F3-92A4-08AA9EDBC126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{938A3C2D-15DA-45F3-92A4-08AA9EDBC126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{938A3C2D-15DA-45F3-92A4-08AA9EDBC126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{938A3C2D-15DA-45F3-92A4-08AA9EDBC126}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1A152A7-9F61-4C20-8288-7B498B28576E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1A152A7-9F61-4C20-8288-7B498B28576E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1A152A7-9F61-4C20-8288-7B498B28576E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1A152A7-9F61-4C20-8288-7B498B28576E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

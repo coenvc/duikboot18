@@ -1,0 +1,7 @@
+C:\Users\coenv\documents\visual studio 2017\Projects\Duikboot2018\Mollie.Api\bin\Release\netstandard1.2\Mollie.Api.deps.json
+C:\Users\coenv\documents\visual studio 2017\Projects\Duikboot2018\Mollie.Api\bin\Release\netstandard1.2\Mollie.Api.dll
+C:\Users\coenv\documents\visual studio 2017\Projects\Duikboot2018\Mollie.Api\bin\Release\netstandard1.2\Mollie.Api.pdb
+C:\Users\coenv\documents\visual studio 2017\Projects\Duikboot2018\Mollie.Api\obj\Release\netstandard1.2\Mollie.Api.csprojResolveAssemblyReference.cache
+C:\Users\coenv\documents\visual studio 2017\Projects\Duikboot2018\Mollie.Api\obj\Release\netstandard1.2\Mollie.Api.AssemblyInfo.cs
+C:\Users\coenv\documents\visual studio 2017\Projects\Duikboot2018\Mollie.Api\obj\Release\netstandard1.2\Mollie.Api.dll
+C:\Users\coenv\documents\visual studio 2017\Projects\Duikboot2018\Mollie.Api\obj\Release\netstandard1.2\Mollie.Api.pdb

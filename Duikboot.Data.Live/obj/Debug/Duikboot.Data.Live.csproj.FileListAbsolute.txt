@@ -1,0 +1,10 @@
+C:\Users\coenv\documents\visual studio 2017\Projects\Duikboot2018\Duikboot.Data.Live\obj\Debug\Duikboot.Data.Live.csprojResolveAssemblyReference.cache
+C:\Users\coenv\documents\visual studio 2017\Projects\Duikboot2018\Duikboot.Data.Live\bin\Debug\Duikboot.Data.Live.dll.config
+C:\Users\coenv\documents\visual studio 2017\Projects\Duikboot2018\Duikboot.Data.Live\bin\Debug\Duikboot.Data.Live.dll
+C:\Users\coenv\documents\visual studio 2017\Projects\Duikboot2018\Duikboot.Data.Live\bin\Debug\Duikboot.Data.Live.pdb
+C:\Users\coenv\documents\visual studio 2017\Projects\Duikboot2018\Duikboot.Data.Live\bin\Debug\EntityFramework.dll
+C:\Users\coenv\documents\visual studio 2017\Projects\Duikboot2018\Duikboot.Data.Live\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\coenv\documents\visual studio 2017\Projects\Duikboot2018\Duikboot.Data.Live\bin\Debug\EntityFramework.xml
+C:\Users\coenv\documents\visual studio 2017\Projects\Duikboot2018\Duikboot.Data.Live\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\coenv\documents\visual studio 2017\Projects\Duikboot2018\Duikboot.Data.Live\obj\Debug\Duikboot.Data.Live.dll
+C:\Users\coenv\documents\visual studio 2017\Projects\Duikboot2018\Duikboot.Data.Live\obj\Debug\Duikboot.Data.Live.pdb
