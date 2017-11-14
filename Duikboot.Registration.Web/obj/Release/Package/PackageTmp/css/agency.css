@@ -230,7 +230,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/header-bg.jpg');
+  background-image: url('../img/website-header.png');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -296,7 +296,9 @@ section h3.section-subheading {
   font-style: italic;
   font-weight: 400;
   margin-bottom: 75px;
-}
+} 
+
+
 @media (min-width: 768px) {
   section {
     padding: 150px 0;

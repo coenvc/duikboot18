@@ -13,10 +13,10 @@ namespace Duikboot.Data.Live.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DuikbootDBEntities : DbContext
+    public partial class DBContext : DbContext
     {
-        public DuikbootDBEntities()
-            : base("name=DuikbootDBEntities")
+        public DBContext()
+            : base("name=DBContext")
         {
         }
     

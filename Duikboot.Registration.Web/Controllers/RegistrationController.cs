@@ -34,6 +34,11 @@ namespace Duikboot.Registration.Web.Controllers
             return View();
         }
 
+        public ActionResult GetAvailability()
+        {
+            return Json(meerijderRepository.GetAvailableDates(),JsonRequestBehavior.AllowGet); 
+        }
+
         [HttpPost]
         [AcceptVerbs(HttpVerbs.Post)]
         public async Task<ActionResult> Register(Meerijder meerijder)

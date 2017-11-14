@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DuikbootDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Meerijder">
           <Key>
             <PropertyRef Name="ID" />
@@ -21,14 +21,14 @@
           <Property Name="Dinsdag" Type="bit" />
           <Property Name="Amount" Type="decimal" Precision="18" Scale="0" />
         </EntityType>
-        <EntityContainer Name="DuikbootDBModelStoreContainer">
+        <EntityContainer Name="DBModelStoreContainer">
           <EntitySet Name="Meerijder" EntityType="Self.Meerijder" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="DuikbootDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Meerijder">
           <Key>
             <PropertyRef Name="ID" />
@@ -45,7 +45,7 @@
           <Property Name="Dinsdag" Type="Boolean" />
           <Property Name="Amount" Type="Decimal" Precision="18" Scale="0" />
         </EntityType>
-        <EntityContainer Name="DuikbootDBEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="DBContext" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Meerijder" EntityType="Self.Meerijder" />
         </EntityContainer>
       </Schema>
@@ -53,9 +53,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="DuikbootDBModelStoreContainer" CdmEntityContainer="DuikbootDBEntities">
+        <EntityContainerMapping StorageEntityContainer="DBModelStoreContainer" CdmEntityContainer="DBContext">
           <EntitySetMapping Name="Meerijder">
-            <EntityTypeMapping TypeName="DuikbootDBModel.Meerijder">
+            <EntityTypeMapping TypeName="DBModel.Meerijder">
               <MappingFragment StoreEntitySet="Meerijder">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Firstname" ColumnName="Firstname" />

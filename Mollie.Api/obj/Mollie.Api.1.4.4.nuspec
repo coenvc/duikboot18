@@ -17,6 +17,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\coenv\documents\visual studio 2017\Projects\Duikboot2018\Mollie.Api\bin\Release\netstandard1.2\Mollie.Api.dll" target="lib\netstandard1.2\Mollie.Api.dll" />
+    <file src="C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Mollie.Api\bin\Release\netstandard1.2\Mollie.Api.dll" target="lib\netstandard1.2\Mollie.Api.dll" />
   </files>
 </package>

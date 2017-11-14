@@ -3008,10 +3008,10 @@
   "project": {
     "version": "1.4.4",
     "restore": {
-      "projectUniqueName": "C:\\Users\\coenv\\documents\\visual studio 2017\\Projects\\Duikboot2018\\Mollie.Api\\Mollie.Api.csproj",
+      "projectUniqueName": "C:\\Users\\coenv\\Documents\\Visual Studio 2017\\Projects\\Test\\duikboot18\\Mollie.Api\\Mollie.Api.csproj",
       "projectName": "Mollie.Api",
-      "projectPath": "C:\\Users\\coenv\\documents\\visual studio 2017\\Projects\\Duikboot2018\\Mollie.Api\\Mollie.Api.csproj",
-      "outputPath": "C:\\Users\\coenv\\documents\\visual studio 2017\\Projects\\Duikboot2018\\Mollie.Api\\obj\\",
+      "projectPath": "C:\\Users\\coenv\\Documents\\Visual Studio 2017\\Projects\\Test\\duikboot18\\Mollie.Api\\Mollie.Api.csproj",
+      "outputPath": "C:\\Users\\coenv\\Documents\\Visual Studio 2017\\Projects\\Test\\duikboot18\\Mollie.Api\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netstandard1.2"

@@ -12,3 +12,10 @@ C:\Users\coenv\Documents\Visual Studio 2017\Projects\Duikboot2018\Mollie.Api\obj
 C:\Users\coenv\Documents\Visual Studio 2017\Projects\Duikboot2018\Mollie.Api\obj\Debug\netstandard1.2\Mollie.Api.AssemblyInfo.cs
 C:\Users\coenv\Documents\Visual Studio 2017\Projects\Duikboot2018\Mollie.Api\obj\Debug\netstandard1.2\Mollie.Api.dll
 C:\Users\coenv\Documents\Visual Studio 2017\Projects\Duikboot2018\Mollie.Api\obj\Debug\netstandard1.2\Mollie.Api.pdb
+C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Mollie.Api\bin\Debug\netstandard1.2\Mollie.Api.deps.json
+C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Mollie.Api\bin\Debug\netstandard1.2\Mollie.Api.dll
+C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Mollie.Api\bin\Debug\netstandard1.2\Mollie.Api.pdb
+C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Mollie.Api\obj\Debug\netstandard1.2\Mollie.Api.AssemblyInfo.cs
+C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Mollie.Api\obj\Debug\netstandard1.2\Mollie.Api.dll
+C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Mollie.Api\obj\Debug\netstandard1.2\Mollie.Api.pdb
+C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Mollie.Api\obj\Debug\netstandard1.2\Mollie.Api.csprojResolveAssemblyReference.cache

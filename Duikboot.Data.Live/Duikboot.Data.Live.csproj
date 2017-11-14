@@ -51,48 +51,49 @@
   <ItemGroup>
     <Compile Include="ExtensionMethods\Extension.cs" />
     <Compile Include="MeerijderRepository\MeerijderRepository.cs" />
-    <Compile Include="Models\DuikbootModels.Context.cs">
+    <Compile Include="Models\DatabaseModels.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DuikbootModels.Context.tt</DependentUpon>
+      <DependentUpon>DatabaseModels.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\DuikbootModels.cs">
+    <Compile Include="Models\DatabaseModels.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DuikbootModels.tt</DependentUpon>
+      <DependentUpon>DatabaseModels.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\DuikbootModels.Designer.cs">
+    <Compile Include="Models\DatabaseModels.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DuikbootModels.edmx</DependentUpon>
+      <DependentUpon>DatabaseModels.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Meerijder.cs">
-      <DependentUpon>DuikbootModels.tt</DependentUpon>
+      <DependentUpon>DatabaseModels.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <EntityDeploy Include="Models\DuikbootModels.edmx">
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="Models\DatabaseModels.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DuikbootModels.Designer.cs</LastGenOutput>
+      <LastGenOutput>DatabaseModels.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Models\DuikbootModels.edmx.diagram">
-      <DependentUpon>DuikbootModels.edmx</DependentUpon>
+    <None Include="Models\DatabaseModels.edmx.diagram">
+      <DependentUpon>DatabaseModels.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="Models\DuikbootModels.Context.tt">
+    <Content Include="Models\DatabaseModels.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DuikbootModels.edmx</DependentUpon>
-      <LastGenOutput>DuikbootModels.Context.cs</LastGenOutput>
+      <DependentUpon>DatabaseModels.edmx</DependentUpon>
+      <LastGenOutput>DatabaseModels.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\DuikbootModels.tt">
+    <Content Include="Models\DatabaseModels.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DuikbootModels.edmx</DependentUpon>
-      <LastGenOutput>DuikbootModels.cs</LastGenOutput>
+      <DependentUpon>DatabaseModels.edmx</DependentUpon>
+      <LastGenOutput>DatabaseModels.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

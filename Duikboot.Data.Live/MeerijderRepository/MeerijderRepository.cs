@@ -9,7 +9,7 @@ namespace Duikboot.Data.Live
 {
     public class MeerijderRepository
     {
-        private DuikbootDBEntities Db = new DuikbootDBEntities();
+        private DBContext Db = new DBContext();
         public List<Meerijder> GetAll()
         {
             return Db.Meerijder.ToList();
@@ -30,7 +30,7 @@ namespace Duikboot.Data.Live
         {
             var spots = Db.Meerijder.Count(x => x.Zaterdag == true);
 
-            if (spots <= 42)
+            if (spots >= 42)
             {
                 return true;
             }
@@ -41,7 +41,7 @@ namespace Duikboot.Data.Live
         {
             var spots = Db.Meerijder.Count(x => x.Zondag == true);
 
-            if (spots <= 42)
+            if (spots >= 42)
             {
                 return true;
             }
@@ -52,7 +52,7 @@ namespace Duikboot.Data.Live
         {
             var spots = Db.Meerijder.Count(x => x.Maandag == true);
 
-            if (spots <= 43)
+            if (spots >= 43)
             {
                 return true;
             }
@@ -63,11 +63,24 @@ namespace Duikboot.Data.Live
         {
             var spots = Db.Meerijder.Count(x => x.Dinsdag == true);
 
-            if (spots <= 43)
+            if (spots >= 43)
             {
                 return true;
             }
             return false;
         }
+
+        public Dictionary<string, bool> GetAvailableDates()
+        {
+            var availableDates = new Dictionary<string, bool>
+            {
+                {"zaterdag", SpotsAvailableSaturday()},
+                {"zondag", SpotsAvailableSunday()},
+                {"maandag", SpotsAvailableMonday()},
+                {"dinsdag", SpotsAvailableTuesday()}
+            }; 
+
+            return availableDates;
+        } 
     }
 }

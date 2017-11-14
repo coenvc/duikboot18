@@ -6,7 +6,12 @@
 @font-face {
     font-family: "DK_Lemon_Yellow_Sun";
     src: url('../fonts/DK_Lemon_Yellow_Sun.otf')
-} 
+}
+
+.btn-default {
+    background-color: #f1c34d !important;
+    color: #fff !important;
+}
 
 header{ 
     height: 100vh;
@@ -91,3 +96,46 @@ body {
     padding: 10px;
 }
 
+#bs-example-navbar-collapse-1 > ul {
+    margin-top: 10px !important;
+}
+
+.port-image {
+    width: 100%;
+}
+
+.gallery-img {
+    margin-bottom: 30px;
+}
+
+.img-gallery{
+    height: 250px;
+    width: 100%;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+
+.img-gallery > .middle {
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+} 
+
+ .img-gallery:hover {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0.3;
+        background-image: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-right-128.png');
+        background-repeat: no-repeat;
+}
+
+@media(max-width: 480px) {
+    header { background-image: url('../img/website-header-mobiel.png'); }
+    .img-gallery { height: 125px; }
+}
