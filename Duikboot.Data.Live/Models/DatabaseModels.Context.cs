@@ -26,5 +26,6 @@ namespace Duikboot.Data.Live.Models
         }
     
         public virtual DbSet<Meerijder> Meerijder { get; set; }
+        public virtual DbSet<User> User { get; set; }
     }
 }
