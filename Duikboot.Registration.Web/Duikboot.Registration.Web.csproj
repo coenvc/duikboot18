@@ -190,6 +190,7 @@
     <Content Include="img\content\Geslaagd.png" />
     <Content Include="img\content\Mislukt.png" />
     <Content Include="img\content\MOCP.jpg" />
+    <Content Include="img\content\Roeien_of_verzuipen.png" />
     <Content Include="img\content\Veurgloeien.jpg" />
     <Content Include="img\content\Voorlopige_planning.png" />
     <Content Include="img\fotos\17311226_1921800954720864_8349057664213180845_o.jpg" />
@@ -225,6 +226,8 @@
     <Content Include="img\logos\Weijtmans.png" />
     <Content Include="img\logos\Woox.png" />
     <Content Include="img\mail-image.png" />
+    <Content Include="img\content\NIEUW-website-planning-desktop-wit.png" />
+    <Content Include="img\content\NIEUW-website-planning-mobiel-wit.png" />
     <Content Include="img\portfolio\1.jpg" />
     <Content Include="img\team\1.jpg" />
     <Content Include="img\team\2.jpg" />
@@ -282,6 +285,8 @@
     <Content Include="oneui\assets\img\avatars\avatar8.jpg" />
     <Content Include="oneui\assets\img\avatars\avatar9.jpg" />
     <Content Include="oneui\assets\img\avatars\readme.txt" />
+    <Content Include="oneui\assets\img\favicons\android-chrome-192x192.png" />
+    <Content Include="oneui\assets\img\favicons\android-chrome-512x512.png" />
     <Content Include="oneui\assets\img\favicons\apple-touch-icon-114x114.png" />
     <Content Include="oneui\assets\img\favicons\apple-touch-icon-120x120.png" />
     <Content Include="oneui\assets\img\favicons\apple-touch-icon-144x144.png" />
@@ -291,12 +296,16 @@
     <Content Include="oneui\assets\img\favicons\apple-touch-icon-60x60.png" />
     <Content Include="oneui\assets\img\favicons\apple-touch-icon-72x72.png" />
     <Content Include="oneui\assets\img\favicons\apple-touch-icon-76x76.png" />
+    <Content Include="oneui\assets\img\favicons\apple-touch-icon.png" />
     <Content Include="oneui\assets\img\favicons\favicon-160x160.png" />
     <Content Include="oneui\assets\img\favicons\favicon-16x16.png" />
     <Content Include="oneui\assets\img\favicons\favicon-192x192.png" />
     <Content Include="oneui\assets\img\favicons\favicon-32x32.png" />
     <Content Include="oneui\assets\img\favicons\favicon-96x96.png" />
+    <Content Include="oneui\assets\img\favicons\favicon.ico" />
     <Content Include="oneui\assets\img\favicons\favicon.png" />
+    <Content Include="oneui\assets\img\favicons\mstile-150x150.png" />
+    <Content Include="oneui\assets\img\favicons\safari-pinned-tab.svg" />
     <Content Include="oneui\assets\img\photos\photo1%402x.jpg" />
     <Content Include="oneui\assets\img\photos\photo1.jpg" />
     <Content Include="oneui\assets\img\photos\photo10%402x.jpg" />

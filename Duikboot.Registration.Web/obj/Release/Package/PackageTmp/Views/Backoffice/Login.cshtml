@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "../_AutLayout.cshtml";
+    ViewBag.Message = "";
+}
+
+@using (Html.BeginForm("Login", "Backoffice", FormMethod.Post, new { @class = "js-validation-login form-horizontal push-30-t" })) {
+        <div class="form-group">
+            <div class="col-xs-12">
+                <div class="form-material form-material-primary floating">
+                    <input class="form-control" type="text" id="login-username" name="Username">
+                    <label for="login-username">Username</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-12">
+                <div class="form-material form-material-primary floating">
+                    <input class="form-control" type="password" id="login-password" name="Password">
+                    <label for="login-password">Password</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-6">
+                <label class="css-input switch switch-sm switch-primary">
+                    <input type="checkbox" id="login-remember-me" name="login-remember-me"><span></span> Remember Me?
+                </label>
+            </div>
+            <div class="col-xs-6">
+                <div class="font-s13 text-right push-5-t">
+                    <a href="../base_pages_reminder_v2.html">Forgot Password?</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-group push-30-t">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                <button class="btn btn-sm btn-block btn-primary" type="submit">Log in</button>
+            </div>
+        </div>
+    }

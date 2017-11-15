@@ -18,6 +18,9 @@ header{
 }
 
 
+.planning-mobile{display:none} 
+.planning-desktop{ display: block;}
+
 .page-container {
     padding-top: 120px;
 }
@@ -141,6 +144,8 @@ body {
     header { background-image: url('../img/website-header-mobiel.png'); }
     .img-gallery { height: 125px; }
     .event-img{ height: 150px; width: 150px;}
-    #btn-header{margin-top:57vh}
+    #btn-header{margin-top:57vh} 
+    .planning-desktop{display:none} 
+    .planning-mobile{ display: block;}
 }
 
