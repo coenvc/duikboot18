@@ -36,8 +36,12 @@ namespace Duikboot.Registration.Web.Controllers
                     break;
             }
             return View("Index", null, "_AuthLayout");
-        } 
+        }
 
+        public ActionResult Index()
+        {
+            return View("Index");
+        }
         
     }
 }

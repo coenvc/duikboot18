@@ -23,7 +23,7 @@
                 </thead>
                 <tbody>
                     @{
-                        foreach (Meerijder meerijder in Model)
+                        foreach (Meerijder meerijder in Model.OrderBy(x => x.Firstname))
                         {
                             <tr>
                                 <td class="font-w600">@meerijder.Firstname @meerijder.Surname</td>
