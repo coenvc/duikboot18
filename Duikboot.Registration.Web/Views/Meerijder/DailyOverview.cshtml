@@ -1,0 +1,42 @@
+﻿@using Duikboot.Data.Live.Models
+@model System.Collections.Generic.List<Duikboot.Data.Live.Models.Meerijder>
+
+@{
+    Layout = "../_Backoffice.cshtml";
+}
+
+<!-- Full Table -->
+<div class="block">
+    <div class="block-header">
+        <h3 class="block-title">Meerijders @ViewBag.Title</h3>
+    </div>
+    <div class="block-content">
+        <p class="push-30">Overzicht van alle meerijders op @ViewBag.Title</p>
+        <div class="table-responsive">
+            <table class="table table-striped table-vcenter">
+                <thead>
+                    <tr>
+                        <th>Naam</th>
+                        <th style="width: 30%;">Email</th>
+                        <th style="width: 15%;">Telefoonnummer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        foreach (Meerijder meerijder in Model)
+                        {
+                            <tr>
+                                <td class="font-w600">@meerijder.Firstname @meerijder.Surname</td>
+                                <td>@meerijder.Email</td>
+                                <td>@meerijder.PhoneNumber</td>
+                            </tr>
+                        }
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- END Full Table -->
+

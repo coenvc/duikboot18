@@ -7,6 +7,7 @@
       <Diagram DiagramId="40152bf88992411ebef625fc84ad2928" Name="Diagram1">
         <EntityTypeShape EntityType="DBModel.Meerijder" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DBModel.User" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="DBModel.Capacity" Width="1.5" PointX="3.375" PointY="3.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

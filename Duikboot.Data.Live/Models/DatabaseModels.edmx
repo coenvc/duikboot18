@@ -30,9 +30,21 @@
           <Property Name="Password" Type="varchar(max)" Nullable="false" />
           <Property Name="Email" Type="varchar(max)" />
         </EntityType>
+        <EntityType Name="Capacity">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="Name" Type="varchar(max)" />
+          <Property Name="Meerijders" Type="int" />
+          <Property Name="Leden" Type="int" />
+          <Property Name="MaxCapacity" Type="int" />
+        </EntityType>
         <EntityContainer Name="DBModelStoreContainer">
           <EntitySet Name="Meerijder" EntityType="Self.Meerijder" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Capacity" EntityType="Self.Capacity" Schema="duikboot" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -57,6 +69,7 @@
         <EntityContainer Name="DBContext" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Meerijder" EntityType="Self.Meerijder" />
           <EntitySet Name="User" EntityType="DBModel.User" />
+          <EntitySet Name="Capacity" EntityType="DBModel.Capacity" />
         </EntityContainer>
         <EntityType Name="User">
           <Key>
@@ -66,6 +79,17 @@
           <Property Name="Username" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="Password" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Capacity">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Meerijders" Type="Int32" />
+          <Property Name="Leden" Type="Int32" />
+          <Property Name="MaxCapacity" Type="Int32" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -96,6 +120,18 @@
                 <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="Password" ColumnName="Password" />
                 <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Capacity">
+            <EntityTypeMapping TypeName="DBModel.Capacity">
+              <MappingFragment StoreEntitySet="Capacity">
+                <ScalarProperty Name="MaxCapacity" ColumnName="MaxCapacity" />
+                <ScalarProperty Name="Leden" ColumnName="Leden" />
+                <ScalarProperty Name="Meerijders" ColumnName="Meerijders" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>

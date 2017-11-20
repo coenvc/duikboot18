@@ -18,12 +18,38 @@ namespace Duikboot.Data.Live
         public void Add(Meerijder meerijder)
         {
             Db.Meerijder.Add(meerijder);
+
+            var spotsSaturday = Db.Meerijder.Count(x => x.Zaterdag == true);
+            Capacity capactiySaturday = Db.Capacity.FirstOrDefault(x => x.Name == "zaterdag");
+            capactiySaturday.Meerijders = spotsSaturday;
+
+            var spotsSunday = Db.Meerijder.Count(x => x.Zaterdag == true);
+            Capacity capactiySunday = Db.Capacity.FirstOrDefault(x => x.Name == "zondag");
+            capactiySunday.Meerijders = spotsSunday;
+
+            var spotsMonday = Db.Meerijder.Count(x => x.Zaterdag == true);
+            Capacity capactiyMonday = Db.Capacity.FirstOrDefault(x => x.Name == "maandag");
+            capactiyMonday.Meerijders = spotsMonday;
+
+            var spotsTuesday = Db.Meerijder.Count(x => x.Zaterdag == true);
+            Capacity capactiyTuesday = Db.Capacity.FirstOrDefault(x => x.Name == "dinsdag");
+            capactiyMonday.Meerijders = spotsMonday;
+
+
             Db.SaveChanges();
         }
 
         public Meerijder GetById(int id)
         {
             return Db.Meerijder.Find(id);
+        }
+
+        public List<Meerijder> GetMeerijderByDay(string day)
+        { 
+            
+            var meerijders = Db.Meerijder.SqlQuery($"select * from meerijder where {day} = 1").ToList();
+
+            return meerijders;
         }
 
         public bool SpotsAvailableSaturday()

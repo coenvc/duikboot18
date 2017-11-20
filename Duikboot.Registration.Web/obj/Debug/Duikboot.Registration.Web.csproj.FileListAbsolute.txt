@@ -150,3 +150,9 @@ C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Duikboot.Re
 C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Duikboot.Registration.Web\obj\Debug\Duikboot.Registration.Web.csprojResolveAssemblyReference.cache
 C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Duikboot.Registration.Web\obj\Debug\Duikboot.Registration.Web.dll
 C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Duikboot.Registration.Web\obj\Debug\Duikboot.Registration.Web.pdb
+C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Duikboot.Registration.Web\bin\System.Net.Http.Formatting.dll
+C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Duikboot.Registration.Web\bin\System.Web.Http.dll
+C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Duikboot.Registration.Web\bin\System.Web.Http.WebHost.dll
+C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Duikboot.Registration.Web\bin\System.Net.Http.Formatting.xml
+C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Duikboot.Registration.Web\bin\System.Web.Http.xml
+C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Duikboot.Registration.Web\bin\System.Web.Http.WebHost.xml

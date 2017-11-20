@@ -6,32 +6,18 @@
 <head>
     <meta charset="utf-8">
 
-    <title>OneUI - Admin Dashboard Template &amp; UI Framework</title>
+    <title>Duikboot - Backoffice</title>
 
-    <meta name="description" content="OneUI - Admin Dashboard Template &amp; UI Framework created by pixelcave and published on Themeforest">
+    <meta name="description" content="Duikboot - Backoffice">
     <meta name="author" content="pixelcave">
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Icons -->
     <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
-    <link rel="shortcut icon" href="~/oneui/assets/img/favicons/favicon.png">
 
-    <link rel="icon" type="image/png" href="~/oneui/assets/img/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="~/oneui/assets/img/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="~/oneui/assets/img/favicons/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="~/oneui/assets/img/favicons/favicon-160x160.png" sizes="160x160">
-    <link rel="icon" type="image/png" href="~/oneui/assets/img/favicons/favicon-192x192.png" sizes="192x192">
 
-    <link rel="apple-touch-icon" sizes="57x57" href="~/oneui/assets/img/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="~/oneui/assets/img/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="~/oneui/assets/img/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="~/oneui/assets/img/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="~/oneui/assets/img/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="~/oneui/assets/img/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="~/oneui/assets/img/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="~/oneui/assets/img/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="~/oneui/assets/img/favicons/apple-touch-icon-180x180.png">
+
     <!-- END Icons -->
     <!-- Stylesheets -->
     <!-- Web fonts -->
@@ -384,33 +370,33 @@
                             <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-right">
-                            <li class="dropdown-header">Profile</li>
+@*                            <li class="dropdown-header">Profile</li>*@
+@*                            <li>*@
+@*                                <a tabindex="-1" href="base_pages_inbox.html">*@
+@*                                    <i class="si si-envelope-open pull-right"></i>*@
+@*                                    <span class="badge badge-primary pull-right">3</span>Inbox*@
+@*                                </a>*@
+@*                            </li>*@
+@*                            <li>*@
+@*                                <a tabindex="-1" href="base_pages_profile.html">*@
+@*                                    <i class="si si-user pull-right"></i>*@
+@*                                    <span class="badge badge-success pull-right">1</span>Profile*@
+@*                                </a>*@
+@*                            </li>*@
+@*                            <li>*@
+@*                                <a tabindex="-1" href="javascript:void(0)">*@
+@*                                    <i class="si si-settings pull-right"></i>Settings*@
+@*                                </a>*@
+@*                            </li>*@
+@*                            <li class="divider"></li>*@
+@*                            <li class="dropdown-header">Actions</li>*@
+@*                            <li>*@
+@*                                <a tabindex="-1" href="base_pages_lock.html">*@
+@*                                    <i class="si si-lock pull-right"></i>Lock Account*@
+@*                                </a>*@
+@*                            </li>*@
                             <li>
-                                <a tabindex="-1" href="base_pages_inbox.html">
-                                    <i class="si si-envelope-open pull-right"></i>
-                                    <span class="badge badge-primary pull-right">3</span>Inbox
-                                </a>
-                            </li>
-                            <li>
-                                <a tabindex="-1" href="base_pages_profile.html">
-                                    <i class="si si-user pull-right"></i>
-                                    <span class="badge badge-success pull-right">1</span>Profile
-                                </a>
-                            </li>
-                            <li>
-                                <a tabindex="-1" href="javascript:void(0)">
-                                    <i class="si si-settings pull-right"></i>Settings
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li class="dropdown-header">Actions</li>
-                            <li>
-                                <a tabindex="-1" href="base_pages_lock.html">
-                                    <i class="si si-lock pull-right"></i>Lock Account
-                                </a>
-                            </li>
-                            <li>
-                                <a tabindex="-1" href="base_pages_login.html">
+                                <a tabindex="-1" href="@Url.Action("login","backoffice")">
                                     <i class="si si-logout pull-right"></i>Log out
                                 </a>
                             </li>
@@ -419,9 +405,9 @@
                 </li>
                 <li>
                     <!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
-                    <button class="btn btn-default" data-toggle="layout" data-action="side_overlay_toggle" type="button">
-                        <i class="fa fa-tasks"></i>
-                    </button>
+@*                    <button class="btn btn-default" data-toggle="layout" data-action="side_overlay_toggle" type="button">*@
+@*                        <i class="fa fa-tasks"></i>*@
+@*                    </button>*@
                 </li>
             </ul>
             <!-- END Header Navigation Right -->
@@ -477,24 +463,20 @@
             <div class="content bg-white border-b">
                 <div class="row items-push text-uppercase">
                     <div class="col-xs-6 col-sm-3">
-                        <div class="font-w700 text-gray-darker animated fadeIn">Product Sales</div>
-                        <div class="text-muted animated fadeIn"><small><i class="si si-calendar"></i> Today</small></div>
-                        <a class="h2 font-w300 text-primary animated flipInX" href="base_comp_charts.html">300</a>
+                        <div class="text-muted animated fadeIn"><small><i class="si si-calendar"></i> Zaterdag</small></div>
+                        <a class="h2 font-w300 text-primary animated flipInX occupation_saturday" id="zaterdag" href="base_comp_charts.html"></a>
                     </div>
                     <div class="col-xs-6 col-sm-3">
-                        <div class="font-w700 text-gray-darker animated fadeIn">Product Sales</div>
-                        <div class="text-muted animated fadeIn"><small><i class="si si-calendar"></i> This Month</small></div>
-                        <a class="h2 font-w300 text-primary animated flipInX" href="base_comp_charts.html">8,790</a>
+                        <div class="text-muted animated fadeIn"><small><i class="si si-calendar"></i> Zondag</small></div>
+                        <a class="h2 font-w300 text-primary animated flipInX occupation_sunday" id="zondag" href="base_comp_charts.html"></a>
                     </div>
                     <div class="col-xs-6 col-sm-3">
-                        <div class="font-w700 text-gray-darker animated fadeIn">Total Earnings</div>
-                        <div class="text-muted animated fadeIn"><small><i class="si si-calendar"></i> All Time</small></div>
-                        <a class="h2 font-w300 text-primary animated flipInX" href="base_comp_charts.html">$ 93,880</a>
+                        <div class="text-muted animated fadeIn"><small><i class="si si-calendar"></i> Maandag</small></div>
+                        <a class="h2 font-w300 text-primary animated flipInX occupation_monday" id="maandag" href="base_comp_charts.html"></a>
                     </div>
                     <div class="col-xs-6 col-sm-3">
-                        <div class="font-w700 text-gray-darker animated fadeIn">Average Sale</div>
-                        <div class="text-muted animated fadeIn"><small><i class="si si-calendar"></i> All Time</small></div>
-                        <a class="h2 font-w300 text-primary animated flipInX" href="base_comp_charts.html">$ 270</a>
+                        <div class="text-muted animated fadeIn"><small><i class="si si-calendar"></i> Dinsdag</small></div>
+                        <a class="h2 font-w300 text-primary animated flipInX occupation_tuesday" id="dinsdag" href="base_comp_charts.html"></a>
                     </div>
                 </div>
             </div>
@@ -512,12 +494,7 @@
 <!-- END Main Container -->
 <!-- Footer -->
 <footer id="page-footer" class="content-mini content-mini-full font-s12 bg-gray-lighter clearfix">
-    <div class="pull-right">
-        Crafted with <i class="fa fa-heart text-city"></i> by <a class="font-w600" href="http://goo.gl/vNS3I" target="_blank">pixelcave</a>
-    </div>
-    <div class="pull-left">
-        <a class="font-w600" href="http://goo.gl/6LF10W" target="_blank">OneUI 3.3</a> &copy; <span class="js-year-copy">2015</span>
-    </div>
+
 </footer>
 <!-- END Footer -->
 </div>
@@ -564,6 +541,7 @@
 </div>
 <!-- END Apps Modal -->
 <!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
+
 <script src="~/oneui/assets/js/core/jquery.min.js"></script>
 <script src="~/oneui/assets/js/core/bootstrap.min.js"></script>
 <script src="~/oneui/assets/js/core/jquery.slimscroll.min.js"></script>
@@ -575,16 +553,31 @@
 <script src="~/oneui/assets/js/app.js"></script>
 
 <!-- Page Plugins -->
-<script src=" ~/oneui/assets/js/plugins/slick/slick.min.js"></script>
-<script src=" ~/oneui/assets/js/plugins/chartjs/Chart.min.js"></script>
+<script src="~/oneui/assets/js/plugins/slick/slick.min.js"></script>
+<script src="~/oneui/assets/js/plugins/chartjs/Chart.min.js"></script>
 
 <!-- Page JS Code -->
-<script src=" ~/oneui/assets/js/pages/base_pages_dashboard.js"></script>
+
 <script>
     jQuery(function () {
         // Init page helpers (Slick Slider plugin)
         App.initHelpers('slick');
     });
-</script>
+</script> 
+    <script>
+
+        jQuery(document).ready(function() {
+            jQuery.ajax({
+                url: "@Url.Action("DailyOccupationPercentage", "Meerijder", null, this.Request.Url.Scheme)",
+                success: function(data) {
+                    $("#zaterdag").text(data.zaterdag+"%");
+                    $("#zondag").text(data.zondag+"%");
+                    $("#maandag").text(data.maandag+"%");
+                    $("#dinsdag").text(data.dinsdag+"%");
+                }
+            });
+
+        });
+    </script>
 </body>
 </html>

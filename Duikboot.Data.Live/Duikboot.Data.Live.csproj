@@ -50,9 +50,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExtensionMethods\Extension.cs" />
+    <Compile Include="Models\Capacity.cs">
+      <DependentUpon>DatabaseModels.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\User.cs">
       <DependentUpon>DatabaseModels.tt</DependentUpon>
     </Compile>
+    <Compile Include="Repository\CapacityRepository.cs" />
     <Compile Include="Repository\MeerijderRepository.cs" />
     <Compile Include="Models\DatabaseModels.Context.cs">
       <AutoGen>True</AutoGen>
