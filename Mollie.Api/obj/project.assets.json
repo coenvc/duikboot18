@@ -3003,15 +3003,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\coenv\\.nuget\\packages\\": {}
+    "C:\\Users\\Thom\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.4.4",
     "restore": {
-      "projectUniqueName": "C:\\Users\\coenv\\Documents\\Visual Studio 2017\\Projects\\Test\\duikboot18\\Mollie.Api\\Mollie.Api.csproj",
+      "projectUniqueName": "D:\\Documents\\GitHub\\duikboot18\\Mollie.Api\\Mollie.Api.csproj",
       "projectName": "Mollie.Api",
-      "projectPath": "C:\\Users\\coenv\\Documents\\Visual Studio 2017\\Projects\\Test\\duikboot18\\Mollie.Api\\Mollie.Api.csproj",
-      "outputPath": "C:\\Users\\coenv\\Documents\\Visual Studio 2017\\Projects\\Test\\duikboot18\\Mollie.Api\\obj\\",
+      "projectPath": "D:\\Documents\\GitHub\\duikboot18\\Mollie.Api\\Mollie.Api.csproj",
+      "outputPath": "D:\\Documents\\GitHub\\duikboot18\\Mollie.Api\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netstandard1.2"

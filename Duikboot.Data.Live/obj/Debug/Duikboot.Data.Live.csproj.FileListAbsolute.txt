@@ -18,3 +18,13 @@ C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Duikboot.Da
 C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Duikboot.Data.Live\obj\Debug\Duikboot.Data.Live.csprojResolveAssemblyReference.cache
 C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Duikboot.Data.Live\obj\Debug\Duikboot.Data.Live.dll
 C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Duikboot.Data.Live\obj\Debug\Duikboot.Data.Live.pdb
+D:\Documents\GitHub\duikboot18\Duikboot.Data.Live\bin\Debug\Duikboot.Data.Live.dll.config
+D:\Documents\GitHub\duikboot18\Duikboot.Data.Live\bin\Debug\Duikboot.Data.Live.dll
+D:\Documents\GitHub\duikboot18\Duikboot.Data.Live\bin\Debug\Duikboot.Data.Live.pdb
+D:\Documents\GitHub\duikboot18\Duikboot.Data.Live\bin\Debug\EntityFramework.dll
+D:\Documents\GitHub\duikboot18\Duikboot.Data.Live\bin\Debug\EntityFramework.SqlServer.dll
+D:\Documents\GitHub\duikboot18\Duikboot.Data.Live\bin\Debug\EntityFramework.xml
+D:\Documents\GitHub\duikboot18\Duikboot.Data.Live\bin\Debug\EntityFramework.SqlServer.xml
+D:\Documents\GitHub\duikboot18\Duikboot.Data.Live\obj\Debug\Duikboot.Data.Live.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\duikboot18\Duikboot.Data.Live\obj\Debug\Duikboot.Data.Live.dll
+D:\Documents\GitHub\duikboot18\Duikboot.Data.Live\obj\Debug\Duikboot.Data.Live.pdb

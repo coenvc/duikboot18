@@ -19,3 +19,10 @@ C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Mollie.Api\
 C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Mollie.Api\obj\Debug\netstandard1.2\Mollie.Api.dll
 C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Mollie.Api\obj\Debug\netstandard1.2\Mollie.Api.pdb
 C:\Users\coenv\Documents\Visual Studio 2017\Projects\Test\duikboot18\Mollie.Api\obj\Debug\netstandard1.2\Mollie.Api.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\duikboot18\Mollie.Api\bin\Debug\netstandard1.2\Mollie.Api.deps.json
+D:\Documents\GitHub\duikboot18\Mollie.Api\bin\Debug\netstandard1.2\Mollie.Api.dll
+D:\Documents\GitHub\duikboot18\Mollie.Api\bin\Debug\netstandard1.2\Mollie.Api.pdb
+D:\Documents\GitHub\duikboot18\Mollie.Api\obj\Debug\netstandard1.2\Mollie.Api.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\duikboot18\Mollie.Api\obj\Debug\netstandard1.2\Mollie.Api.AssemblyInfo.cs
+D:\Documents\GitHub\duikboot18\Mollie.Api\obj\Debug\netstandard1.2\Mollie.Api.dll
+D:\Documents\GitHub\duikboot18\Mollie.Api\obj\Debug\netstandard1.2\Mollie.Api.pdb

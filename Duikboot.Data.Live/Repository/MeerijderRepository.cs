@@ -54,35 +54,38 @@ namespace Duikboot.Data.Live
 
         public bool SpotsAvailableSaturday()
         {
-            var spots = Db.Meerijder.Count(x => x.Zaterdag == true);
+            //var spots = Db.Meerijder.Count(x => x.Zaterdag == true);
 
-            if (spots >= 42)
-            {
-                return true;
-            }
-            return false;
+            //if (spots >= 42)
+            //{ 
+            //    return true;
+            //}
+            //return false;
+            return true;
         }
 
         public bool SpotsAvailableSunday()
         {
-            var spots = Db.Meerijder.Count(x => x.Zondag == true);
+            //var spots = Db.Meerijder.Count(x => x.Zondag == true);
 
-            if (spots >= 42)
-            {
-                return true;
-            }
-            return false;
+            //if (spots >= 42)
+            //{
+            //    return true;
+            //}
+            //return false;
+            return true;
         }
 
         public bool SpotsAvailableMonday()
         {
-            var spots = Db.Meerijder.Count(x => x.Maandag == true);
+            //var spots = Db.Meerijder.Count(x => x.Maandag == true);
 
-            if (spots >= 43)
-            {
-                return true;
-            }
-            return false;
+            //if (spots >= 43)
+            //{
+            //    return true;
+            //}
+            //return false;
+            return true;
         }
 
         public bool SpotsAvailableTuesday()
